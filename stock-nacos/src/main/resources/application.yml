@@ -1,0 +1,15 @@
+server:
+  port: 8023
+  # 应用名称（nacos会将该名称当作服务名称）
+spring:
+  application:
+    name: stock-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        discovery:
+          username: nacos
+          password: nacos
+          # 命名空间用来隔离不同的实例环境
+          namespace: public
